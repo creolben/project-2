@@ -31,10 +31,5 @@ function writeMessage() {
       if(isset($_POST['optradio1'])){
         $status = 'checked';
       }
-
 }
-
-
-
-
 ?>
