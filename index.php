@@ -1,9 +1,18 @@
+
 <!DOCTYPE html>
+
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
 	<head>
+		<script>
+		$('#input-1').checkboxpicker({
+		  html: true,
+		  offLabel: '<span class="glyphicon glyphicon-remove">',
+		  onLabel: '<span class="glyphicon glyphicon-ok">'
+		});
+		</script>
 		<meta charset="utf-8">
 		<title>CS15 Class 2016</title>
 		<meta name="description" content="Worthy a Bootstrap-based, Responsive HTML5 Template">
@@ -42,35 +51,28 @@
 
 		<!-- header start -->
 		<!-- ================ -->
+
 		<header class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-
 						<!-- header-left start -->
 						<!-- ================ -->
 						<div class="header-left clearfix">
-
 							<!-- logo -->
 							<div class="logo smooth-scroll">
 							<!--	<a href="#banner"><img id="logo" src="images/logo.png" alt="Worthy"></a>-->
 							</div>
 							<!-- name-and-slogan -->
 							<div class="site-name-and-slogan smooth-scroll">
-								<div class="site-name"><a href="#banner">CSCI E-15 </a></div>
-								<div class="site-slogan">Dynamic Web Applications Fall 2016 </div>
 							</div>
-
 						</div>
 						<!-- header-left end -->
-
 					</div>
 					<div class="col-md-8">
-
 						<!-- header-right start -->
 						<!-- ================ -->
 						<div class="header-right clearfix">
-
 							<!-- main-navigation start -->
 							<!-- ================ -->
 							<div class="main-navigation animated">
@@ -79,7 +81,6 @@
 								<!-- ================ -->
 								<nav class="navbar navbar-default" role="navigation">
 									<div class="container-fluid">
-
 										<!-- Toggle get grouped for better mobile display -->
 										<div class="navbar-header">
 											<button type="button" class="navbar-toggle">
@@ -89,81 +90,61 @@
 												<span class="icon-bar"></span>
 											</button>
 										</div>
-
 									</div>
 								</nav>
 								<!-- navbar end -->
-
 							</div>
 							<!-- main-navigation end -->
-
 						</div>
 						<!-- header-right end -->
-
 					</div>
 				</div>
 			</div>
 		</header>
 		<!-- header end -->
-		<?php require('functions.php')?>
-
-
+<?php require('stop_words.php');?>
+<?php require('functions.php');?>
+	<h3 class="text-center title" id="portfolio"><?php echo $message;?></h3>
 		<!-- section start -->
 		<!-- ================ -->
 		<div class="section">
 			<div class="container">
-				<h1 class="text-center title" id="portfolio"><?php echo $message; ?></h1>
 				<div class="separator"></div>
 				<div class="row">
-						<div class="container col-md-12 text-center">
+						<div class="jumbotron col-md-12 text-center">
 							<h2 class="text-primary"><?php writeMessage();?></h2>
 						</div>
 					<div class="container col-md-6 col-md-offset-3">
 						<form role="form" method="post">
 							<div class="form-group has-feedback col-md-offset-4">
 								<div class="col-md-6">
-									<input style="text" class="form-control" id="name2" placeholder="# of Words" name="name2" required>
+									<input style="text" class="form-control input-sm" value="<?php echo $_GET["name2"]?>" id="name2" placeholder="# of Words" name="name2" required>
 								</div>
-								<div class="radio col-md-12">
-  								<label class="radio"><input type="radio" name="optradio">Add a number</label>
-							  </div>
-								<div class="radio col-md-12">
-								<label class="radio"><input type="radio" name="optradio">Add a symbol</label><br>
-								<input type="submit" value="G" class="btn btn-default">
+								<div class="checkbox col-md-12">
+  								<label><input type="checkbox" value="" checked name="optradio1">Number</label>
 								</div>
-						</div>
+								<div class="checkbox col-md-12">
+									<label><input type="checkbox" value="" checked name="optradio2">Symbol</label>
+								</div><br>
+									<div class="checkbox col-md-12">
+								<input type="submit" value="Gime" class="btn btn-default">
+							</div>
+						 </div>
 						</form>
 					</div>
        </div>
-				<br>
-
 				<!-- isotope filters end -->
 				<div class="row">
 					<div class="text-center">
 						<div style="background-color:black;">
   						<img class="center-block" src="images/Typewriter.jpg"style="width:60%;">
-
+					  </div>
 					</div>
-
-
-
-								</div>
-							</div>
-						</div>
-						<!-- Modal end -->
-					</div>
-
-				</div>
-				<!-- portfolio items end -->
-
-			</div>
-		</div>
-	</div>
+			 </div>
+	 </div>
+			<!-- Modal end -->
 </div>
 <!-- section end -->
-
-
-
 		<!-- section start -->
 		<!-- ================ -->
 		<div class="default-bg space">
@@ -180,7 +161,6 @@
 		<!-- footer start -->
 		<!-- ================ -->
 		<footer id="footer">
-
 			<!-- .footer start -->
 			<!-- ================ -->
 			<div class="footer section">
@@ -242,7 +222,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<p class="text-center">Copyright © 2014 Worthy by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>.</p>
+							<p class="text-center">Copyright © 2016 </p>
 						</div>
 					</div>
 				</div>
