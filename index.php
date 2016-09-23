@@ -6,18 +6,11 @@
 <html lang="en">
 <!--<![endif]-->
 	<head>
-		<script>
-		$('#input-1').checkboxpicker({
-		  html: true,
-		  offLabel: '<span class="glyphicon glyphicon-remove">',
-		  onLabel: '<span class="glyphicon glyphicon-ok">'
-		});
-		</script>
 		<meta charset="utf-8">
 		<title>CS15 Class 2016</title>
 		<meta name="description" content="Worthy a Bootstrap-based, Responsive HTML5 Template">
 		<meta name="author" content="htmlcoder.me">
-
+		<?php require('functions.php');?>
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -58,6 +51,7 @@
 					<div class="col-md-4">
 						<!-- header-left start -->
 						<!-- ================ -->
+						<h2 style="color:orange;"><?php echo $message;?></h2>
 						<div class="header-left clearfix">
 							<!-- logo -->
 							<div class="logo smooth-scroll">
@@ -102,8 +96,8 @@
 			</div>
 		</header>
 		<!-- header end -->
-<?php require('stop_words.php');?>
-<?php require('functions.php');?>
+
+
 	<h3 class="text-center title" id="portfolio"><?php echo $message;?></h3>
 		<!-- section start -->
 		<!-- ================ -->
@@ -119,6 +113,7 @@
 							<div class="form-group has-feedback col-md-offset-4">
 								<div class="col-md-6">
 									<input style="text" class="form-control input-sm" value="<?php echo $_GET["name2"]?>" id="name2" placeholder="# of Words" name="name2" required>
+									<?php echo "<p class='text-danger'>$errName</p>";?>
 								</div>
 								<div class="checkbox col-md-12">
   								<label><input type="checkbox" value="" checked name="optradio1">Number</label>
@@ -163,58 +158,6 @@
 		<footer id="footer">
 			<!-- .footer start -->
 			<!-- ================ -->
-			<div class="footer section">
-				<div class="container">
-					<h1 class="title text-center" id="contact">Contact Us</h1>
-					<div class="space"></div>
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="footer-content">
-								<p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Repellat vel, et itaque commodi iste ab, laudantium voluptas deserunt nobis.</p>
-								<ul class="list-icons">
-									<li><i class="fa fa-map-marker pr-10"></i> One infinity loop, 54100</li>
-									<li><i class="fa fa-phone pr-10"></i> +00 1234567890</li>
-									<li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
-									<li><i class="fa fa-envelope-o pr-10"></i> your@email.com</li>
-								</ul>
-								<ul class="social-links">
-									<li class="facebook"><a target="_blank" href="https://www.facebook.com/pages/HtmlCoder/714570988650168"><i class="fa fa-facebook"></i></a></li>
-									<li class="twitter"><a target="_blank" href="https://twitter.com/HtmlcoderMe"><i class="fa fa-twitter"></i></a></li>
-									<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-									<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-									<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-									<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
-									<li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
-									<li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="footer-content">
-								<form role="form" id="footer-form">
-									<div class="form-group has-feedback">
-										<label class="sr-only" for="name2">Name</label>
-										<input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
-										<i class="fa fa-user form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label class="sr-only" for="email2">Email address</label>
-										<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
-										<i class="fa fa-envelope form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label class="sr-only" for="message2">Message</label>
-										<textarea class="form-control" rows="8" id="message2" placeholder="Message" name="message2" required></textarea>
-										<i class="fa fa-pencil form-control-feedback"></i>
-									</div>
-									<input type="submit" value="Send" class="btn btn-default">
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- .footer end -->
 
 			<!-- .subfooter start -->
 			<!-- ================ -->
