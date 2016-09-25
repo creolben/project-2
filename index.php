@@ -106,7 +106,7 @@
 				<div class="separator"></div>
 				<div class="row">
 						<div class="jumbotron col-md-12 text-center">
-							<h2 class="text-primary">""&<?php writeMessage();?></h2>
+							<h2 class="text-primary"><?php writeMessage();?></h2>
 						</div>
 					<div class="container col-md-6 col-md-offset-3">
 						<form method="post">
