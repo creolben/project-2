@@ -73,7 +73,7 @@
 
 								<!-- navbar start -->
 								<!-- ================ -->
-								<nav class="navbar navbar-default" role="navigation">
+								<nav class="navbar navbar-default">
 									<div class="container-fluid">
 										<!-- Toggle get grouped for better mobile display -->
 										<div class="navbar-header">
@@ -106,10 +106,10 @@
 				<div class="separator"></div>
 				<div class="row">
 						<div class="jumbotron col-md-12 text-center">
-							<h2 class="text-primary"><?php writeMessage();?></h2>
+							<h2 class="text-primary">""&<?php writeMessage();?></h2>
 						</div>
 					<div class="container col-md-6 col-md-offset-3">
-						<form role="form" method="post">
+						<form method="post">
 							<div class="form-group has-feedback col-md-offset-4">
 								<div class="col-md-6">
 									<input style="text" class="form-control input-sm" value="<?php echo $_GET["name2"]?>" id="name2" placeholder="# of Words" name="name2" required>
@@ -132,7 +132,7 @@
 				<div class="row">
 					<div class="text-center">
 						<div style="background-color:black;">
-  						<img class="center-block" src="images/Typewriter.jpg"style="width:60%;">
+  						<img alt ="type writer" class="center-block" src="images/Typewriter.jpg" style="width:60%;">
 					  </div>
 					</div>
 			 </div>
@@ -146,7 +146,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<h1 class="text-center"></h1>
+						<h1 class="text-center">"Test"</h1>
 					</div>
 				</div>
 			</div>
